@@ -23,7 +23,7 @@
             <div class="grid grid-cols-3 gap-4 mt-8">
                 <div class="bg-purple-300 p-8 rounded-lg">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h3 class="text-3xl">$<span>00</span></h3>
+                    <h3 class="text-3xl">$<span id="deposit-total">00</span></h3>
                 </div>
                 <div class="bg-red-300 p-8 rounded-lg">
                     <h4 class="text-2xl">Withdraw</h4>
@@ -42,9 +42,9 @@
             <div class="grid grid-cols-2 gap-4">
                 <div class="bg-purple-300 rounded-lg mt-8 p-8">
                     <h4 class="text-2xl mb-2">Please Deposit</h4>
-                    <input id="" class="border rounded px-2 block w-3/4" type="text"
+                    <input id="deposit-input" class="border rounded px-2 block w-3/4" type="text"
                         placeholder="$ want to deposit">
-                    <button class="bg-red-400 rounded text-white px-4 py-1 mt-4">Deposit</button>
+                    <button id="deposit-btn" class="bg-red-400 rounded text-white px-4 py-1 mt-4">Deposit</button>
                 </div>
                 <div class="bg-red-300 rounded-lg mt-8 p-8">
                     <h4 class="text-2xl mb-2">Please Withdraw</h4>
@@ -56,6 +56,8 @@
         </section>
         <!-- End deposit and withdraw balance input field -->
     </main>
+
+    <script src="js/banking.js"></script>
 </body>
 
 </html>
